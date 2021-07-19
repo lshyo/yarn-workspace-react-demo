@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "ie": "9",
+          "edge": "17",
+          "firefox": "60",
+          "chrome": "60",
+          "safari": "11.1"
+        },
+        "useBuiltIns": "usage",
+        "corejs":{
+          "version": 3,
+          "proposals": true
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-do-expressions",
+    "@babel/transform-runtime"
+//   "transform-remove-console"
+  ]
+}
